@@ -1,0 +1,19 @@
+services:
+  app:
+    depends_on:
+      - postgres
+    build: .
+    volumes:
+      - ./:/root/take_home_project
+    command: sh -c 'until nc -z postgres 5432; do sleep 1; done; python app.py'
+    ports:
+      - "8888:8888"
+    env_file:
+      - ./local.env
+
+  postgres:
+    image: postgres:15.2
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    env_file:
+      - ./local.env

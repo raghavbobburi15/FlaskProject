@@ -1,10 +1,4 @@
-# Ark Summer 2023 Software Engineering Internship Take Home Project
-
-## Introduction
-
-At Ark Biotech, we're building bioreactors purpose-built for cultivated meat, with a mission to 100x the industry’s capacity by 2035. The Data Systems team is responsible for everything from production, model-based control software to web-based data monitoring applications.
-
-In this take home project, you'll get the chance to demonstrate your proficiency in Python, building a simple web-based dashboard to visualize real-time process data originating from one of our bioreactors.
+# Flask Dashboard
 
 ## Technical Details
 
@@ -62,26 +56,13 @@ Run `docker compose up` and navigate your browser to http://localhost:8888/. Tha
 ## Minimum Viable (Take Home) Project
 
 The dashboard should allow the user to plot each of these four series (Temperature, pH, Distilled Oxygen, and Pressure) over time.
-
-### How you'll be evaluated
-
-1) Does your package install successfully?
-2) Can your dashboard be viewed at http://localhost:8888/, does it fulfill the MVP specification, and does it look good?
-3) Is your code high quality, e.g. does it follow PEP8, is it fully type annotated, are there comments?
-4) Bonus features.
+Dashboard be viewed at http://localhost:8888/ .
 
 ### Bonus features
 
 Please do not work on these features until you've successfully completed the MVP, and haven't run out of time.
 
-1) Can you allow the user to select the time window?
-2) Can you add a button to refresh the data without refreshing the page, or auto-refresh the page for the user?
-3) Can you add a "Download as csv" button?
+1) User to select the time window?
+2) button to refresh the data without refreshing the page, or auto-refresh the page for the user?
+3) "Download as csv" button?
 
-## Submission Instructions
-
-Please submit your project at this [Google Form](https://forms.gle/z1zAA5MdqsC4tFpH7) by 8am EDT Tuesday, May 2nd, 2023.
-
-## Proprietary & Confidential
-
-Please note that this project and the accompanying dataset is proprietary and confidential to Ark Biotech Inc. We ask that you keep these project materials private. For example, please do not post this information or your solution to publicly available websites like GitHub or Google Drive.
